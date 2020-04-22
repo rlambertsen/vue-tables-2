@@ -13,7 +13,8 @@
                 <vnodes :vnodes="props.slots.afterFilterWrapper"/>
 
                 <div v-if="props.perPageValues.length > 1"
-                     :class="`${props.theme.field} ${props.theme.inline} ${props.theme.right} VueTables__limit`">
+                     :class="[`${props.theme.field} ${props.theme.inline} VueTables__limit`]"
+                >
                     <vnodes :vnodes="props.slots.beforeLimit"/>
                     <vt-per-page-selector/>
                     <vnodes :vnodes="props.slots.afterLimit"/>

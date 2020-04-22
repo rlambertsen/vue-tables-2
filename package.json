@@ -71,6 +71,7 @@
     "prettier": "1.14.0",
     "sinon": "^6.0.0",
     "vue-loader": "^15.7.1",
+    "vue-pagi-vwi": "^2.1.5",
     "vue-resource": "^1.5.1",
     "vue-template-compiler": "^2.6.10",
     "vue-test-utils": "^1.0.0-beta.11",
