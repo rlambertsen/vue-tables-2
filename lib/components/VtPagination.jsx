@@ -1,5 +1,5 @@
 import RLPagination from "./renderless/RLPagination";
-import Pagination from "vue-pagination-2";
+import Pagination from "vue-pagi-vwi";
 
 export default {
     name: 'VtPagination',

@@ -7,7 +7,7 @@ exports["default"] = void 0;
 
 var _RLPagination = _interopRequireDefault(require("./renderless/RLPagination"));
 
-var _vuePagination = _interopRequireDefault(require("vue-pagination-2"));
+var _vuePagiVwi = _interopRequireDefault(require("vue-pagi-vwi"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -15,7 +15,7 @@ var _default2 = {
   name: 'VtPagination',
   components: {
     RLPagination: _RLPagination["default"],
-    Pagination: _vuePagination["default"]
+    Pagination: _vuePagiVwi["default"]
   },
   render: function render(h) {
     return h("r-l-pagination", {

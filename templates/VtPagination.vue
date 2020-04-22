@@ -6,17 +6,23 @@
                 :records="props.records"
                 :per-page="props.perPage"
                 v-model="props.page"
-                @paginate="page => props.setPage(page)"/>
+                @paginate="paginate"/>
 </template>
 
 <script>
-    import Pagination from 'vue-pagination-2'
+    import Pagination from 'vue-pagi-vwi'
 
     export default {
         name: "MyPagination",
         components: {
             Pagination
         },
-        props: ['props']
+        props: ['props'],
+        methods: {
+            paginate(page) {
+                this.$emit('paginate', this.props.page);
+                return this.props.setPage(page)
+            }
+        }
     }
 </script>

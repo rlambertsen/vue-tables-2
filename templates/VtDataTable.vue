@@ -1,6 +1,9 @@
 <template>
 
-    <div :class="`VueTables VueTables--${props.source}`" slot-scope="props">
+    <div :class="`VueTables VueTables--${props.source}`"
+         slot-scope="props"
+         @paginate="this.$emit('paginate', v => v.page)"
+    >
 
         <div :class="props.theme.row">
             <div :class="props.theme.column">
